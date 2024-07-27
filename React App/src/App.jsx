@@ -20,6 +20,7 @@ function App() {
       )}
      <div className='app'>
     <Navbar setshowLogin={setshowLogin}/>
+   
     <Routes>
       
        {/* <Route path='/' element={<Home/>}/>
