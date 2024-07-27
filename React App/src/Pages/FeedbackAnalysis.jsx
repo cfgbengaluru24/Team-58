@@ -2,12 +2,13 @@ import React, { useEffect, useState } from 'react';
 
 const FeedbackPage = () => {
   const [feedbackData, setFeedbackData] = useState([]);
-  const [summary, setSummary] = useState('');
+  const [positiveSummary, setPositiveSummary] = useState('');
+  const [negativeSummary, setNegativeSummary] = useState('');
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     // Fetch feedback data from the backend when the component mounts
-    fetch('/api/feedback')
+    fetch('http://127.0.0.1:8000/comments')
       .then(response => response.json())
       .then(data => {
         setFeedbackData(data);
@@ -17,22 +18,30 @@ const FeedbackPage = () => {
       });
   }, []);
 
-  const generateSummary = (type) => {
+  const generatePositiveSummary = () => {
     setLoading(true);
-    fetch('/api/feedback/summary', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ type }),
-    })
+    fetch('http://127.0.0.1:8000/comments_p')
       .then(response => response.json())
       .then(data => {
-        setSummary(data.summary);
+        setPositiveSummary(data.response_p);
         setLoading(false);
       })
       .catch(error => {
-        console.error('Error generating summary:', error);
+        console.error('Error generating positive summary:', error);
+        setLoading(false);
+      });
+  };
+
+  const generateNegativeSummary = () => {
+    setLoading(true);
+    fetch('http://127.0.0.1:8000/comments_n')
+      .then(response => response.json())
+      .then(data => {
+        setNegativeSummary(data.response_n);
+        setLoading(false);
+      })
+      .catch(error => {
+        console.error('Error generating negative summary:', error);
         setLoading(false);
       });
   };
@@ -44,7 +53,7 @@ const FeedbackPage = () => {
         <table>
           <thead>
             <tr>
-              <th>Date</th>
+              <th>Time</th>
               <th>Username</th>
               <th>Feedback</th>
             </tr>
@@ -52,7 +61,7 @@ const FeedbackPage = () => {
           <tbody>
             {feedbackData.map(feedback => (
               <tr key={feedback.id}>
-                <td>{feedback.date}</td>
+                <td>{feedback.timestamp}</td> 
                 <td>{feedback.username}</td>
                 <td>{feedback.feedback}</td>
               </tr>
@@ -62,14 +71,23 @@ const FeedbackPage = () => {
       ) : (
         <p>No feedback available.</p>
       )}
-      <button className="negative" onClick={() => generateSummary('negative')} disabled={loading}>
-        Generate Negative Feedback Summary
-      </button>
-      <button className="positive" onClick={() => generateSummary('positive')} disabled={loading}>
+      <button onClick={generatePositiveSummary} disabled={loading}>
         Generate Positive Feedback Summary
       </button>
-      {summary && (
-        <textarea rows="10" cols="50" value={summary} readOnly />
+      <button onClick={generateNegativeSummary} disabled={loading}>
+        Generate Negative Feedback Summary
+      </button>
+      {positiveSummary && (
+        <div>
+          <h2>Positive Feedback Summary</h2>
+          <textarea rows="10" cols="50" value={positiveSummary} readOnly />
+        </div>
+      )}
+      {negativeSummary && (
+        <div>
+          <h2>Negative Feedback Summary</h2>
+          <textarea rows="10" cols="50" value={negativeSummary} readOnly />
+        </div>
       )}
     </div>
   );

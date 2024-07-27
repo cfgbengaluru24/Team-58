@@ -38,8 +38,15 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'summarize',
-    'corsheaders'
+    'corsheaders',
+    'rest_framework'
 ]
+
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.AllowAny',
+    ]
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -79,10 +86,20 @@ WSGI_APPLICATION = 'Djangoapp.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'djongo',
+        'NAME': 'your_database_name',
+        'ENFORCE_SCHEMA': False,
+        'CLIENT': {
+            'host': 'your_mongo_host',  # e.g., 'localhost' or the URI for your MongoDB Atlas cluster
+            'port': 'your_mongo_port',  # e.g., 27017
+            'username': 'your_mongo_username',
+            'password': 'your_mongo_password',
+            'authSource': 'admin',
+            'authMechanism': 'SCRAM-SHA-1',
+        },
     }
 }
+
 
 
 # Password validation
