@@ -1,0 +1,12 @@
+.program{
+    display: flex;
+    flex-wrap: wrap;
+}
+.image{
+    width:40vw;
+    height: 400px;
+    object-fit: cover;
+}
+.text{
+    width: 50vw;
+}
