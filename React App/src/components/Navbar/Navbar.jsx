@@ -1,7 +1,7 @@
 import React, { useContext, useState, useEffect } from 'react';
 import './Navbar.css';
 import { Link, useNavigate } from 'react-router-dom';
-import logo from '../../assets/logo.png';
+import logo from '../../assets/navlogo.png';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
 const Navbar = ({ setshowLogin }) => {
