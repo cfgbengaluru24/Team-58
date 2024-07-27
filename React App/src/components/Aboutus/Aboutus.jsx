@@ -8,6 +8,7 @@ import { FaUserTie } from "react-icons/fa";
 
 const Aboutus = () => {
   return (
+    
     <div className="about-us" id="about">
       <div className="about-us__text">
         <h4 className="about-us__subtitle">WHO ARE WE</h4>

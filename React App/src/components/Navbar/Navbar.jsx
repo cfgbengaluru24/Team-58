@@ -19,9 +19,9 @@ const Navbar = ({ setshowLogin }) => {
       </Link>
 
       <div className={`navbar-menu ${isMobileMenuOpen ? 'active' : ''}`}>
-        <a href='#about' onClick={() => setMenu("about")} className={menu === "about" ? "active" : ""}>About</a>
+        <Link to='/#about' onClick={() => setMenu("about")} className={menu === "about" ? "active" : ""}>About</Link>
      <Link to='/contact' onClick={() => setMenu("services")} className={menu === "services" ? "active" : ""}>Contact</Link>
-        <Link to='/program' onClick={() => setMenu("ngo")} className={menu === "ngo" ? "active" : ""}>Our Program</Link>
+        <Link to='/program' onClick={() => setMenu("ngo")} className={menu === "ngo" ? "active" : ""}>Our Programs</Link>
         <a href="">Donate</a>
       </div>
     

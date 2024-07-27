@@ -4,7 +4,6 @@ import './program.css';
 const Program = () => {
   return (
     <div className="program">
-      <h1>Program</h1>
       <p>
         Our program is designed to connect universities with NGOs to foster collaboration and drive positive change in the community. Through our initiatives, we aim to promote sustainable development, provide valuable resources, and create a network of support for various social causes. Join us in making a difference!
       </p>

@@ -5,7 +5,8 @@ import SignUp from './components/Signup/Signup'
 import Home from './Pages/Home/Home'
 import { Route,Routes} from 'react-router-dom';
 import FeedbackPage from './Pages/FeedbackAnalysis'
-import Dashboard from './Pages/Dashboard/Dashboard'import Contact from './Pages/Contact/Contact'
+import Dashboard from './Pages/Dashboard/Dashboard'
+import Contact from './Pages/Contact/Contact'
 import OurProgs from './Pages/OurPrograms/OurProgs'
 
 function App() {

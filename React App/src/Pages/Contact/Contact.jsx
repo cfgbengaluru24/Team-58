@@ -51,7 +51,7 @@ const Contact = () => {
                     <button type="submit">Send</button>
                     {success && <span className="success-message">Your message has been sent successfully!</span>}
                     {error && <span className="success-message">Your message has been sent successfully!</span>}
-                    {alert('Your message has been sent successfully!')}
+                    {success || error && alert('Your message has been sent successfully!')}
                 </form>
             </div>
         </div>
