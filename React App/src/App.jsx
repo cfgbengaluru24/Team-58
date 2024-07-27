@@ -4,10 +4,11 @@ import Login from './components/Login/Login'
 import SignUp from './components/Signup/Signup'
 import Home from './Pages/Home/Home'
 import { Route,Routes} from 'react-router-dom';
+import FeedbackPage from './Pages/FeedbackAnalysis'
+
 
 function App() {
   
-
   const [showLogin, setshowLogin] = useState(false);
   const [isLogin, setIsLogin] = useState(true);
 
@@ -25,8 +26,8 @@ function App() {
    
     <Routes>
         <Route path='/' element={<Home/>}/>
-       {/* <Route path='/cart' element={<Cart/>}/>
-       <Route path='/order' element={<Placeorder/>} />
+       <Route path='/feedback' element={<FeedbackPage/>}/>
+       {/*<Route path='/order' element={<Placeorder/>} />
        <Route path='/verify' element={<Verify/>}/>
        <Route path='/myorders' element={<MyOrders/>}/>  */}
     </Routes>
