@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer" id="contact">
       <div className="footer-container">
         <div className="footer-section contact-info-container">
           <div className="footer-logo-container">
@@ -21,7 +21,6 @@ const Footer = () => {
           <h4>Quick Links</h4>
           <ul>
             <li><a href="#about">About</a></li>
-            <li><a href="#service">Services</a></li>
             <li><a href="#testimonial">Testimonials</a></li>
           </ul>
         </div>
