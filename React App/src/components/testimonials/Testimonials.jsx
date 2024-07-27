@@ -23,7 +23,7 @@ const Testimonials = () => {
   const displayedTestimonials = showAll ? testimonials : testimonials.slice(0, 2);
 
   return (
-    <section className="testimonial">
+    <section className="testimonial" id="services">
       <div className="testimonial-container" id="testimonial">
         <div className="testimonial-content">
           {displayedTestimonials.map((testimonial, index) => (
