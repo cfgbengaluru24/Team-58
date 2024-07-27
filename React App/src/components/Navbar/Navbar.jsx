@@ -20,8 +20,8 @@ const Navbar = ({ setshowLogin }) => {
 
       <div className={`navbar-menu ${isMobileMenuOpen ? 'active' : ''}`}>
         <a href='#about' onClick={() => setMenu("about")} className={menu === "about" ? "active" : ""}>About</a>
-        <a href='#services' onClick={() => setMenu("services")} className={menu === "services" ? "active" : ""}>Contact</a>
-        <a href='#contact' onClick={() => setMenu("ngo")} className={menu === "ngo" ? "active" : ""}>Our Program</a>
+     <Link to='/contact' onClick={() => setMenu("services")} className={menu === "services" ? "active" : ""}>Contact</Link>
+        <Link to='/program' onClick={() => setMenu("ngo")} className={menu === "ngo" ? "active" : ""}>Our Program</Link>
         <a href="">Donate</a>
       </div>
     
