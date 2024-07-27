@@ -62,10 +62,10 @@ const FeedbackPage = () => {
       ) : (
         <p>No feedback available.</p>
       )}
-      <button onClick={() => generateSummary('negative')} disabled={loading}>
+      <button className="negative" onClick={() => generateSummary('negative')} disabled={loading}>
         Generate Negative Feedback Summary
       </button>
-      <button onClick={() => generateSummary('positive')} disabled={loading}>
+      <button className="positive" onClick={() => generateSummary('positive')} disabled={loading}>
         Generate Positive Feedback Summary
       </button>
       {summary && (

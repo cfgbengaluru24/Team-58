@@ -27,3 +27,43 @@ a{
   }
   
 }
+/* Button styles */
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Negative feedback button (red) */
+button.negative {
+  background-color: #e74c3c;
+}
+
+/* Positive feedback button (green) */
+button.positive {
+  background-color: #2ecc71;
+}
+
+/* Table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #f5deb3; /* Light brown color */
+}
+
+table, th, td {
+  border: 1px solid #dcdcdc;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+}
+
+thead {
+  background-color: #f0e68c; /* Khaki color for the header */
+}
