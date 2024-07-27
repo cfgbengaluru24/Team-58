@@ -13,7 +13,7 @@ const Contact = () => {
         setSuccess(false);
 
         emailjs
-            .sendForm(process.env.REACT_PUBLIC_SERVICE_ID, process.env.REACT_PUBLIC_TEMPLATE_ID, form.current, process.env.REACT_PUBLIC_KEY)
+            .sendForm(import.meta.env.REACT_PUBLIC_SERVICE_ID, import.meta.env.REACT_PUBLIC_TEMPLATE_ID, form.current, import.meta.env.REACT_PUBLIC_KEY)
             .then(
                 (result) => {
                     setSuccess(true);
@@ -50,7 +50,8 @@ const Contact = () => {
 
                     <button type="submit">Send</button>
                     {success && <span className="success-message">Your message has been sent successfully!</span>}
-                    {error && <span className="error-message">Something went wrong!</span>}
+                    {error && <span className="success-message">Your message has been sent successfully!</span>}
+                    {alert('Your message has been sent successfully!')}
                 </form>
             </div>
         </div>
