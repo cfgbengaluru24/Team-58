@@ -8,6 +8,7 @@ import FeedbackPage from './Pages/FeedbackAnalysis'
 import Dashboard from './Pages/Dashboard/Dashboard'
 import Contact from './Pages/Contact/Contact'
 import OurProgs from './Pages/OurPrograms/OurProgs'
+import DonationPage from './Pages/DonationPage/DonationPage'
 
 function App() {
   
@@ -32,6 +33,7 @@ function App() {
        <Route path='/dashboard' element={<Dashboard/>}/>
        <Route path='/contact' element={<Contact/>}/>
        <Route path='/program' element={<OurProgs/>}/>
+       <Route path="/donate" element={<DonationPage />} />
      
     </Routes>
     </div>
