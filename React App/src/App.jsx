@@ -5,7 +5,8 @@ import SignUp from './components/Signup/Signup'
 import Home from './Pages/Home/Home'
 import { Route,Routes} from 'react-router-dom';
 import FeedbackPage from './Pages/FeedbackAnalysis'
-import Dashboard from './Pages/Dashboard/Dashboard'
+import Dashboard from './Pages/Dashboard/Dashboard'import Contact from './Pages/Contact/Contact'
+import OurProgs from './Pages/OurPrograms/OurProgs'
 
 function App() {
   
@@ -28,9 +29,9 @@ function App() {
         <Route path='/' element={<Home/>}/>
        <Route path='/feedback' element={<FeedbackPage/>}/>
        <Route path='/dashboard' element={<Dashboard/>}/>
-       {/*<Route path='/order' element={<Placeorder/>} />
-       <Route path='/verify' element={<Verify/>}/>
-       <Route path='/myorders' element={<MyOrders/>}/>  */}
+       <Route path='/contact' element={<Contact/>}/>
+       <Route path='/program' element={<OurProgs/>}/>
+     
     </Routes>
     </div>
      
