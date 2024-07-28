@@ -14,7 +14,6 @@ const Contact = () => {
 
         emailjs
             .sendForm(import.meta.env.REACT_PUBLIC_SERVICE_ID, import.meta.env.REACT_PUBLIC_TEMPLATE_ID, form.current, import.meta.env.REACT_PUBLIC_KEY)
-            //.sendForm('', '', form.current, '')
             .then(
                 (result) => {
                     setSuccess(true);
