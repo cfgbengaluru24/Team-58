@@ -52,8 +52,8 @@
             <ol>
                 <li><strong>Clone the Repository:</strong>
                     <div class="code">
-                        <code>git clone https://github.com/yourusername/online-assessment-video-proctoring.git</code>
-                        <code>cd online-assessment-video-proctoring</code>
+                        <code>https://github.com/cfgbengaluru24/Team-58</code>
+                        <code>cd Team-58</code>
                     </div>
                 </li>
                 <li><strong>Backend Setup:</strong> Navigate to the backend directory and follow the instructions to set up the Python environment and dependencies.</li>
@@ -61,18 +61,6 @@
                 <li><strong>Database Setup:</strong> Ensure MongoDB is installed and running. Configure the database settings as required.</li>
                 <li><strong>Run the Application:</strong> Start the backend and frontend servers and navigate to the application in your browser.</li>
             </ol>
-        </div>
-        <div class="section">
-            <h2>Contribution</h2>
-            <p>We welcome contributions from the community. Please read the contributing guidelines before making any changes.</p>
-        </div>
-        <div class="section">
-            <h2>License</h2>
-            <p>This project is licensed under the MIT License. See the <a href="LICENSE">LICENSE</a> file for more details.</p>
-        </div>
-        <div class="footer">
-            <p>Thank you to all team members and supporters for their contributions to this project. We also appreciate the guidance and resources provided by our institution and external collaborators.</p>
-            <p>For more details, please refer to the project documentation and contact us for any queries or support.</p>
         </div>
     </div>
 </body>
