@@ -8,7 +8,7 @@ import { FaUserTie } from "react-icons/fa";
 
 const Aboutus = () => {
   return (
-    
+
     <div className="about-us" id="about">
       <div className="about-us__text">
         <h4 className="about-us__subtitle">WHO ARE WE</h4>
@@ -18,12 +18,12 @@ const Aboutus = () => {
         <div className="about-us__features">
           <div className="about-us__feature">
             <div>
-              <p>At JTD, the primary goal is to prevent students from discontinuing their education due to socio-economic factors. Recognizing the challenges faced by rural communities, the foundation provides various forms of support, including scholarships, mentorship, and educational resources. By addressing financial constraints and other barriers, JTD empowers students to pursue their academic aspirations and break the cycle of poverty. The foundation’s efforts are geared towards creating an inclusive educational system that nurtures talent and fosters growth, ensuring that every student can achieve their full potential.</p>
+              <p>At JTD, the primary goal is to prevent students from discontinuing their education due to socio-economic factors. Recognizing the challenges faced by rural communities, the foundation provides various forms of support, including scholarships, mentorship, and educational resources. By addressing financial constraints and other barriers, JTD empowers students to pursue their academic aspirations and break the cycle of poverty.</p>
             </div>
           </div>
           <div className="about-us__feature">
             <div>
-              <p>Team JTD comprises a group of like-minded individuals who share a common vision of making a significant difference in rural education. This dedicated team works tirelessly to design and implement programs that cater to the unique needs of students in remote areas. By focusing on innovative teaching methods, infrastructure development, and community involvement, JTD ensures that students receive a quality education that prepares them for a better future. The team’s collective passion and expertise drive the foundation’s initiatives, creating a supportive environment where every child has the opportunity to succeed.</p>
+              <p>Team JTD comprises a group of like-minded individuals who share a common vision of making a significant difference in rural education. This dedicated team works tirelessly to design and implement programs that cater to the unique needs of students in remote areas. By focusing on innovative teaching methods, infrastructure development, and community involvement, JTD ensures that students receive a quality education that prepares them for a better future.</p>
             </div>
           </div>
         </div>
