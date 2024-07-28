@@ -3,7 +3,7 @@ import './Navbar.css';
 import { Link, useNavigate } from 'react-router-dom';
 import logo from '../../assets/navlogo.png';
 import { FaBars, FaTimes } from 'react-icons/fa';
-
+import userimg from '../../assets/profile.webp';
 const Navbar = ({ setshowLogin, user }) => {
   // const user=true
     const [menu, setMenu] = useState("home");
@@ -17,10 +17,11 @@ const Navbar = ({ setshowLogin, user }) => {
         if(user == 'student') {
           return (
             <>
-            <Link to='/test' onClick={() => setMenu("test")} className={menu === "test" ? "active" : ""}>Test</Link>
+            <Link to='/test' onClick={() => setMenu("test")} className={menu === "test" ? "active" : ""}>Assessment</Link>
             <Link to='/feedback' onClick={() => setMenu("feedback")} className={menu === "feedback" ? "active" : ""}>Feedback Form</Link>
-            <Link to='/grevence' onClick={() => setMenu("grevence")} className={menu === "grevence" ? "active" : ""}>Grevence Form</Link>
-            <Link to='/profile' onClick={() => setMenu("profile")} className={menu === "profile" ? "active" : ""}>Profile</Link>
+            <Link to='/grevence' onClick={() => setMenu("grevence")} className={menu === "grevence" ? "active" : ""}>Grievance Form</Link>
+            <Link to='/profile'  onClick={() => setMenu("log")} className={menu === "log" ? "active" : ""}><img className="userimg" src={userimg}/></Link>
+
             </>
           )
         } 
@@ -31,6 +32,7 @@ const Navbar = ({ setshowLogin, user }) => {
             <Link to='/students' onClick={() => setMenu("students")} className={menu === "students" ? "active" : ""}>Students</Link>
             <Link to='/aluminis' onClick={() => setMenu("aluminis")} className={menu === "aluminis" ? "active" : ""}>Aluminis</Link>
             <Link to='/feedbackAn' onClick={() => setMenu("FeedbackAN")} className={menu === "FeedbackAN" ? "active" : ""}>Feedback Analysis</Link>
+            <Link to='/'  onClick={() => setMenu("log")} className={menu === "log" ? "active" : ""}><img className="userimg" src={userimg}/></Link>
             </>
           )
         }
@@ -41,6 +43,7 @@ const Navbar = ({ setshowLogin, user }) => {
             <Link to='/contact' onClick={() => setMenu("services")} className={menu === "services" ? "active" : ""}>Contact</Link>
             <Link to='/program' onClick={() => setMenu("ngo")} className={menu === "ngo" ? "active" : ""}>Our Programs</Link>
             <Link to='/donate' onClick={() => setMenu("Donate")} className={menu === "Donate" ? "active" : ""}>Donate</Link>
+       
             </>
           )
         }
