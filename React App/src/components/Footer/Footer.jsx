@@ -24,15 +24,20 @@ const Footer = () => {
             <li><a href="#testimonial">Testimonials</a></li>
           </ul>
         </div>
+        <div className="footer-section our-programs">
+          <h4>Our Programs</h4>
+          <ul>
+            <li>Joining the forces</li>
+            <li>Joining the swapta swara</li>
+            <li>JTD Enginnering program</li>
+            <li>Joing the atoms</li>
+          </ul>
+        </div>
         <div className="footer-section newsletter">
           <div className="social-links">
-          
-            <a  target="_blank" ><FaYoutubeSquare /></a>
-            <a target="_blank" ><FaLinkedin /></a>
-            <a  target="_blank"><FaSquareFacebook /></a>
-            <a  target="_blank" ><FaInstagramSquare /></a>
-            <a  target="_blank" ><FaSquareTwitter /></a>
 
+            <a href="https://www.linkedin.com/company/jtdfoundation/?originalSubdomain=in" target="_blank" ><FaLinkedin /></a>
+            <a href="https://www.facebook.com/jtdfoundation/" target="_blank"><FaSquareFacebook /></a>
 
           </div>
         </div>
@@ -40,9 +45,8 @@ const Footer = () => {
       <div className="footer-bottom">
         <p>© DOT FOUNDATION - All rights reserved</p>
         <ul>
-         <li><Link  target="_blank" to='/terms' >Terms and Conditions</Link> </li>
-         <li> <Link  target="_blank" to='/privacy'>Privacy Policy</Link>  </li> 
-        
+          <li><Link target="_blank" to='/terms'>Terms and Conditions</Link></li>
+          <li><Link target="_blank" to='/privacy'>Privacy Policy</Link></li>
         </ul>
       </div>
       <div className="end">
