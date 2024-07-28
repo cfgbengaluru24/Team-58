@@ -26,7 +26,7 @@ const Profile = () => {
 
   return (
     <div className="profile">
-      <h1 className="profile-name">vijay</h1>
+      <h1 className="profile-name">sumith</h1>
       <p className="profile-attendance">Attendance: 85%</p>
       <div className="profile-chart">
         <h2>Progress</h2>

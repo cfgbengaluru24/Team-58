@@ -13,8 +13,7 @@ const Aboutus = () => {
       <div className="about-us__text">
         <h4 className="about-us__subtitle">WHO ARE WE</h4>
        
-        <p className="about-us__description">
-        Joining the Dots (JTD) Foundation, a non-profit organization registered under the Government of India     </p>
+       
         <div className="about-us__features">
           <div className="about-us__feature">
             <div>
