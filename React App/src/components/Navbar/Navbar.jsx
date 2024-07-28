@@ -18,7 +18,7 @@ const Navbar = ({ setshowLogin, user }) => {
           return (
             <>
             <Link to='/test' onClick={() => setMenu("test")} className={menu === "test" ? "active" : ""}>Assessment</Link>
-            <Link to='/feedback' onClick={() => setMenu("feedback")} className={menu === "feedback" ? "active" : ""}>Feedback Form</Link>
+            <Link to='/feedi' onClick={() => setMenu("feedback")} className={menu === "feedback" ? "active" : ""}>Feedback Form</Link>
             <Link to='/grevence' onClick={() => setMenu("grevence")} className={menu === "grevence" ? "active" : ""}>Grievance Form</Link>
             <Link to='/profile'  onClick={() => setMenu("log")} className={menu === "log" ? "active" : ""}><img className="userimg" src={userimg}/></Link>
 
@@ -31,7 +31,7 @@ const Navbar = ({ setshowLogin, user }) => {
             <Link to='/colleges' onClick={() => setMenu("colleges")} className={menu === "colleges" ? "active" : ""}>Colleges</Link>
             <Link to='/students' onClick={() => setMenu("students")} className={menu === "students" ? "active" : ""}>Students</Link>
             <Link to='/aluminis' onClick={() => setMenu("aluminis")} className={menu === "aluminis" ? "active" : ""}>Aluminis</Link>
-            <Link to='/feedbackAn' onClick={() => setMenu("FeedbackAN")} className={menu === "FeedbackAN" ? "active" : ""}>Feedback Analysis</Link>
+            <Link to='/feedback' onClick={() => setMenu("FeedbackAN")} className={menu === "FeedbackAN" ? "active" : ""}>Feedback Analysis</Link>
             <Link to='/'  onClick={() => setMenu("log")} className={menu === "log" ? "active" : ""}><img className="userimg" src={userimg}/></Link>
             </>
           )

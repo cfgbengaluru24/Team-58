@@ -39,11 +39,7 @@ const GrevenceForm = () => {
                     onSubmit={sendEmail}
                     ref={form} className="form-container"
                 >
-                    <label htmlFor="name">Name</label>
-                    <input id="name" name="user_name" type="text" required />
-
-                    <label htmlFor="email">Email</label>
-                    <input id="email" name="user_email" type="email" required />
+                    
 
                     <label htmlFor="message">Message</label>
                     <textarea id="message" name="user_message" rows={6} required />
