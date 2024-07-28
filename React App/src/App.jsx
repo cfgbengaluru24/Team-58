@@ -14,7 +14,7 @@ import Profile from './components/Profile/Profile'
 import Colleges from './Pages/colleges/College'
 import Student from './Pages/students/Student'
 import Alumini from './Pages/Aluminis/Alumini'
-
+import Feed from './components/Feed/Feed'
 function App() {
 
   const [showLogin, setshowLogin] = useState(false);
@@ -40,6 +40,7 @@ function App() {
           <Route path='/grevence' element={<GrevenceForm />} />
           <Route path='/profile' element={<Profile />} />
           <Route path='/program' element={<OurProgs />} />
+          <Route path='/feedi' element={<Feed />} />
           <Route path="/donate" element={<DonationPage />} />
           <Route path="/colleges" element={<Colleges />} />
           <Route path="/students" element={<Student />} />
