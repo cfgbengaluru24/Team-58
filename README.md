@@ -50,12 +50,10 @@
 </head>
 <body>
     <div class="container">
-
         <div class="section">
             <h2>Project Overview</h2>
             <p>This repository contains the code and documentation for the Online Assessment with Video Proctoring System. Our solution leverages advanced technologies to automate the student assessment process, provide continuous support, and enhance decision-making and student engagement.</p>
         </div>
-
         <div class="section">
             <h2>Features</h2>
             <ul>
@@ -70,7 +68,6 @@
                 <li><strong>Alumni Community and NGO Support:</strong> Offers additional encouragement and support to students, enhancing their educational experience and reducing dropout rates. Shared success stories provide reassurance to family members, encouraging their support.</li>
             </ul>
         </div>
-
         <div class="section">
             <h2>Future Enhancements</h2>
             <ul>
@@ -78,7 +75,6 @@
                 <li><strong>One-click Email Templates:</strong> Streamline communication with colleges through predefined email templates.</li>
             </ul>
         </div>
-
         <div class="section">
             <h2>Technology Stack</h2>
             <ul>
@@ -89,12 +85,10 @@
                 <li><strong>Chatbot:</strong> Gemini</li>
             </ul>
         </div>
-
         <div class="section">
             <h2>System Architecture</h2>
             <p>The system architecture includes a robust backend built with Python, a user-friendly interface with ReactJs, and a scalable database with MongoDB. The Zoom plugin for attendance and the Gemini chatbot are integrated to enhance the system's functionality.</p>
         </div>
-
         <div class="section">
             <h2>Installation and Setup</h2>
             <ol>
@@ -110,17 +104,14 @@
                 <li><strong>Run the Application:</strong> Start the backend and frontend servers and navigate to the application in your browser.</li>
             </ol>
         </div>
-
         <div class="section">
             <h2>Contribution</h2>
             <p>We welcome contributions from the community. Please read the contributing guidelines before making any changes.</p>
         </div>
-
         <div class="section">
             <h2>License</h2>
             <p>This project is licensed under the MIT License. See the <a href="LICENSE">LICENSE</a> file for more details.</p>
         </div>
-
         <div class="footer">
             <p>Thank you to all team members and supporters for their contributions to this project. We also appreciate the guidance and resources provided by our institution and external collaborators.</p>
             <p>For more details, please refer to the project documentation and contact us for any queries or support.</p>
