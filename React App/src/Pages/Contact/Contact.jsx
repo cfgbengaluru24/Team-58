@@ -14,6 +14,7 @@ const Contact = () => {
 
         emailjs
             .sendForm(import.meta.env.REACT_PUBLIC_SERVICE_ID, import.meta.env.REACT_PUBLIC_TEMPLATE_ID, form.current, import.meta.env.REACT_PUBLIC_KEY)
+            //.sendForm('', '', form.current, '')
             .then(
                 (result) => {
                     setSuccess(true);
@@ -46,12 +47,11 @@ const Contact = () => {
                     <input id="email" name="user_email" type="email" required />
 
                     <label htmlFor="message">Message</label>
-                    <textarea id="message" name="user_message" rows={6} required />
+                    <textarea id="message" name="message" rows={6} required />
 
                     <button type="submit">Send</button>
                     {success && <span className="success-message">Your message has been sent successfully!</span>}
-                    {error && <span className="success-message">Your message has been sent successfully!</span>}
-                    {success || error && alert('Your message has been sent successfully!')}
+                    {error && <span className="error-message">There is some error!!</span>}
                 </form>
             </div>
         </div>
