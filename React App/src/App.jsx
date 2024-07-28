@@ -45,6 +45,7 @@ function App() {
           <Route path="/students" element={<Student />} />
           <Route path="/aluminis" element={<Alumini />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/test" element={<a href="http://localhost:8000/test" > Assessment</a>} />
         </Routes>
       </div>
 
