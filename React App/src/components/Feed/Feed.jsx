@@ -30,7 +30,7 @@ const Feed= () => {
         <div className="container">
             <div className="inner-container">
                 <div className="text-container">
-                    <h1>Grievance Form</h1>
+                    <h1>Feedback Form</h1>
                     <span>Fill the form and we will conatct you soon...</span>
                     <div className="icon-container">
                     </div>
