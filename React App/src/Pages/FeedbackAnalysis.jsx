@@ -20,7 +20,7 @@ const FeedbackPage = () => {
 
   const generatePositiveSummary = () => {
     setLoading(true);
-    fetch('http://127.0.0.1:8000/comments_p')
+    fetch('http://127.0.0.1:8000/commentsp')
       .then(response => response.json())
       .then(data => {
         setPositiveSummary(data.response_p);
@@ -34,7 +34,7 @@ const FeedbackPage = () => {
 
   const generateNegativeSummary = () => {
     setLoading(true);
-    fetch('http://127.0.0.1:8000/comments_n')
+    fetch('http://127.0.0.1:8000/commentsn')
       .then(response => response.json())
       .then(data => {
         setNegativeSummary(data.response_n);
@@ -71,10 +71,10 @@ const FeedbackPage = () => {
       ) : (
         <p>No feedback available.</p>
       )}
-      <button onClick={generatePositiveSummary} disabled={loading}>
+      <button onClick={generatePositiveSummary} disabled={loading} >
         Generate Positive Feedback Summary
       </button>
-      <button onClick={generateNegativeSummary} disabled={loading}>
+      <button onClick={generateNegativeSummary} disabled={loading} >
         Generate Negative Feedback Summary
       </button>
       {positiveSummary && (

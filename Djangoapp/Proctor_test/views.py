@@ -1,8 +1,7 @@
 from django.shortcuts import render, redirect
 import cv2
 from django.http import StreamingHttpResponse
-
-face_cascade = cv2.CascadeClassifier(r"C:\Users\HP\OneDrive\Desktop\PranCode\Cfg\backend\Team-58\haarcascade_frontalface_default.xml")
+face_cascade = cv2.CascadeClassifier(r"C:\Users\sooda\cfg\Team-58\Djangoapp\haarcascade_frontalface_default.xml")
 
 def gen(camera):
     while True:

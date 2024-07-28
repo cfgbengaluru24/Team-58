@@ -39,11 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'summarize',
-<<<<<<< HEAD
-    'chatbot'
-=======
+    'chatbot',
     'corsheaders'
->>>>>>> e673277cf83e4c2e41a1119ec53d6a4df03c1343
 ]
 
 MIDDLEWARE = [
