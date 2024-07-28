@@ -1,6 +1,4 @@
 # Team-58
-# Scholarship Program Digital Solution
-
 ## Table of Contents
 
 1. [Project Overview](#project-overview)
