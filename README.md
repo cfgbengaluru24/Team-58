@@ -1,56 +1,67 @@
-# Team-58
-## Table of Contents
-
-1. [Project Overview](#project-overview)
-2. [Key Features](#key-features)
-3. [How it Solves the Problem](#how-it-solves-the-problem)
-4. [Tech Stack](#tech-stack)
-
-## Project Overview
-
-The Scholarship Program Digital Solution aims to address the challenges faced by the scholarship program in creating awareness, streamlining onboarding, enhancing student engagement, and ensuring successful course completion. The platform provides various tools and features to automate manual tasks, track student progress, and support students throughout their journey.
-
-## Key Features
-
-1. **AI Feedback Summarizer**:
-   - Summarizes feedback received from students and condenses it to a few key points.
-2. **Online Assessment with Video Proctoring**:
-   - Enables the selection of students for the scholarship program through online assessments monitored by video proctoring.
-3. **Doubt Solving Chatbot**:
-   - Provides instant answers to student queries using a chatbot.
-4. **Grievance Form**:
-   - Allows students to submit their problems and grievances, which are then addressed to prevent dropouts.
-5. **Streamlined College Database**:
-   - Maintains a database of colleges, tracking which colleges have been contacted, reducing manual work.
-6. **Alumni Community**:
-   - Builds a community of alumni to encourage current students and convince parents of the program's effectiveness, reducing dropout rates.
-7. **NGO Community Support**:
-   - Involves NGO support to enhance the overall impact and reach of the program.
-
-## How it Solves the Problem
-
-1. **Difficulty in Creating Awareness**:
-   - The platform's digital presence and AI-driven summarizer help in creating awareness about the scholarship program and its benefits to a broader audience.
-2. **Lack of Digital Presence**:
-   - The comprehensive digital platform allows for online student briefings and awareness campaigns.
-3. **Streamlining Onboarding**:
-   - Automates the onboarding process, reducing manual tasks and increasing efficiency.
-4. **Efficient Student Hiring**:
-   - Online assessments with video proctoring streamline the selection process, enabling the hiring of more students efficiently.
-5. **Tracking Student Progress**:
-   - Admins can track student progress through the platform, aiding informed decision-making.
-6. **Increasing Student Engagement**:
-   - Features like the chatbot and alumni community increase student engagement, ensuring they remain committed to the program.
-7. **Sharing Success Stories**:
-   - The alumni community provides a platform to share success stories, encouraging current students.
-8. **Preventing Dropouts**:
-   - The grievance form allows timely intervention for students facing issues, reducing dropout rates.
-9. **Family Support**:
-    - The alumni community and NGO support help in convincing family members to support students' continued participation.
-
-## Tech Stack
-
-- **Frontend**: React
-- **Backend**: Django
-- **Database**: MongoDB
-- **Chatbot**: Gemini
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+   
+</head>
+<body>
+    <div class="container">
+        <div class="section">
+            <h2>Project Overview</h2>
+            <p>This repository contains the code and documentation for the Online Assessment with Video Proctoring System. Our solution leverages advanced technologies to automate the student assessment process, provide continuous support, and enhance decision-making and student engagement.</p>
+        </div>
+        <div class="section">
+            <h2>Features</h2>
+            <ul>
+                <li><strong>Online Assessment with Video Proctoring:</strong> Automates the selection process using video proctoring to ensure integrity and efficiency.</li>
+                <li><strong>AI-enabled Chatbot:</strong> Provides continuous support for students, answering queries and providing guidance.</li>
+                <li><strong>Digital Presence for Student Briefings:</strong> Enhances student engagement through a robust digital platform for briefings and announcements.</li>
+                <li><strong>Enhanced Decision-Making and Student Progress Tracking:</strong> Admins can monitor student progress and make informed decisions using advanced tracking tools.</li>
+                <li><strong>Attendance Tracking System:</strong> Monitors student attendance with added functionality through plugins, including a Zoom integration.</li>
+                <li><strong>AI Feedback Summarizer:</strong> Summarizes student feedback, providing concise insights that save time and effort.</li>
+                <li><strong>Student Feedback Analysis:</strong> Categorizes feedback into good and bad for detailed analysis and action plans.</li>
+                <li><strong>Grievance Form:</strong> Identifies and resolves student issues quickly, reducing dropout rates.</li>
+                <li><strong>Alumni Community and NGO Support:</strong> Offers additional encouragement and support to students, enhancing their educational experience and reducing dropout rates. Shared success stories provide reassurance to family members, encouraging their support.</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Future Enhancements</h2>
+            <ul>
+                <li><strong>Data Mining for Comprehensive Analysis:</strong> Perform in-depth analysis of college, alumni, and student information stored in the database.</li>
+                <li><strong>One-click Email Templates:</strong> Streamline communication with colleges through predefined email templates.</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Technology Stack</h2>
+            <ul>
+                <li><strong>Backend:</strong> Python</li>
+                <li><strong>Frontend:</strong> ReactJs</li>
+                <li><strong>Database:</strong> MongoDB</li>
+                <li><strong>Attendance Plugin:</strong> Zoom integration</li>
+                <li><strong>Chatbot:</strong> Gemini</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>System Architecture</h2>
+            <p>The system architecture includes a robust backend built with Python, a user-friendly interface with ReactJs, and a scalable database with MongoDB. The Zoom plugin for attendance and the Gemini chatbot are integrated to enhance the system's functionality.</p>
+        </div>
+        <div class="section">
+            <h2>Installation and Setup</h2>
+            <ol>
+                <li><strong>Clone the Repository:</strong>
+                    <div class="code">
+                        <code>https://github.com/cfgbengaluru24/Team-58</code>
+                        <code>cd Team-58</code>
+                    </div>
+                </li>
+                <li><strong>Backend Setup:</strong> Navigate to the backend directory and follow the instructions to set up the Python environment and dependencies.</li>
+                <li><strong>Frontend Setup:</strong> Navigate to the frontend directory and install the necessary npm packages.</li>
+                <li><strong>Database Setup:</strong> Ensure MongoDB is installed and running. Configure the database settings as required.</li>
+                <li><strong>Run the Application:</strong> Start the backend and frontend servers and navigate to the application in your browser.</li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>
