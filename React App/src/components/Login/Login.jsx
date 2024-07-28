@@ -1,16 +1,22 @@
 import React, { useState } from 'react';
 import './Login.css';
 import cross_icon from '../../assets/cross_icon.png';
-
+import { useNavigate } from 'react-router-dom';
 const Login = ({ setshowLogin, switchToSignUp, setUser }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
   const [showForgotPassword, setShowForgotPassword] = useState(false);
   const [resetEmail, setResetEmail] = useState('');
-
+const navigate=useNavigate();
+  const onlogin=()=>{
+    setUser(email.startsWith('s') ? 'student' : email.startsWith('a') ? 'admin' : '');
+     setshowLogin(false);
+     navigate('/');
+  }
   
   return (
+    
     <div className='login-popup'>
       {!showForgotPassword && (
         <form className="login-popup-container" >
@@ -23,7 +29,7 @@ const Login = ({ setshowLogin, switchToSignUp, setUser }) => {
             <input onChange={(e) => setPassword(e.target.value)} type="password" placeholder="Password" required />
           <a href="#" onClick={() => setShowForgotPassword(true)} className="blue-link">Forgot Password?</a>
           </div>
-          <button onClick={() => {setUser(email.startsWith('s') ? 'student' : email.startsWith('a') ? 'admin' : ''); setshowLogin(false)}} type="submit" disabled={loading}>{loading ? 'Logging In...' : 'Login'}</button>
+          <button onClick={() => onlogin()} type="submit" disabled={loading}>{loading ? 'Logging In...' : 'Login'}</button>
           {loading && <p>Logging in, please wait...</p>}
           {/* <div className="login-popup-condition">
             <input type="checkbox" required />
