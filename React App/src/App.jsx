@@ -31,20 +31,23 @@ function App() {
           <Login setshowLogin={setshowLogin} switchToSignUp={switchToSignUp} setUser={setUser} /> :
           <SignUp setshowLogin={setshowLogin} switchToLogin={switchToLogin} />
       )}
-     <div className='app'>
-    <Navbar setshowLogin={setshowLogin}/>
-   
-    <Routes>
-        <Route path='/' element={<Home/>}/>
-       <Route path='/feedback' element={<FeedbackPage/>}/>
-       <Route path='/dashboard' element={<Dashboard/>}/>
-       <Route path='/contact' element={<Contact/>}/>
-       <Route path='/program' element={<OurProgs/>}/>
-       <Route path="/donate" element={<DonationPage />} />
-     
-    </Routes>
-    </div>
-     
+      <div className='app'>
+        <Navbar setshowLogin={setshowLogin} user={user} />
+
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/feedback' element={<FeedbackPage />} />
+          <Route path='/grevence' element={<GrevenceForm />} />
+          <Route path='/profile' element={<Profile />} />
+          <Route path='/program' element={<OurProgs />} />
+          <Route path="/donate" element={<DonationPage />} />
+          <Route path="/colleges" element={<Colleges />} />
+          <Route path="/students" element={<Student />} />
+          <Route path="/aluminis" element={<Alumini />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </div>
+
     </>
   )
 }

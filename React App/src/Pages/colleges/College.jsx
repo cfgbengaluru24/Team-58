@@ -22,7 +22,7 @@ const College = () => {
 
   return (
     <div className="dashboard">
-      <h1>NGO University Dashboard</h1>
+      <h1>Colleges Data</h1>
       <div className="container">
         <input
           type="text"

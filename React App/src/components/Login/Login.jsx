@@ -25,10 +25,10 @@ const Login = ({ setshowLogin, switchToSignUp, setUser }) => {
           </div>
           <button onClick={() => {setUser(email.startsWith('s') ? 'student' : email.startsWith('a') ? 'admin' : ''); setshowLogin(false)}} type="submit" disabled={loading}>{loading ? 'Logging In...' : 'Login'}</button>
           {loading && <p>Logging in, please wait...</p>}
-          <div className="login-popup-condition">
+          {/* <div className="login-popup-condition">
             <input type="checkbox" required />
             <p>By continuing I agree to the terms of <span className="blue-link">use</span> and <span className="blue-link">privacy policy</span></p>
-          </div>
+          </div> */}
         </form>
       )}
 

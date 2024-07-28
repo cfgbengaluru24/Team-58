@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import './Aluminis.css';
+import { AlluminiData } from '../../data/allumini';
 
 const Alumini = () => {
   const [searchQuery, setSearchQuery] = useState('');
-  const [data] = useState(Alumini);
+  const [data] = useState(AlluminiData);
 
   const handleSearchChange = (event) => {
     setSearchQuery(event.target.value);
@@ -15,7 +16,7 @@ const Alumini = () => {
 
   return (
     <div className="dashboard">
-      <h1>NGO University Dashboard</h1>
+      <h1>Aluminis Data</h1>
       <div class="container">
       <input
         type="text"
