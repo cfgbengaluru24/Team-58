@@ -31,7 +31,9 @@ const Alumini = () => {
           <tr>
             <th>ID</th>
             <th>Name</th>
-            <th>Status</th>
+            <th>City</th>
+            <th>Contact</th>
+            <th>Email</th>
           </tr>
         </thead>
         <tbody>
@@ -39,7 +41,9 @@ const Alumini = () => {
             <tr key={item.id}>
               <td>{item.id}</td>
               <td>{item.name}</td>
-              <td>{item.status}</td>
+              <td>{item.city}</td>
+              <td>{item.contact}</td>
+              <td>{item.email}</td>
             </tr>
           ))}
         </tbody>

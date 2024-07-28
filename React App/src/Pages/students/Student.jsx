@@ -1,13 +1,10 @@
 import React, { useState } from 'react';
 import './student.css';
+import { STUDENTS } from '../../data/students';
 
 const Student = () => {
   const [searchQuery, setSearchQuery] = useState('');
-  const [data] = useState([
-    { id: 1, name: 'Student A', status: 'Connected' },
-    { id: 2, name: 'Student B', status: 'In Progress' },
-    { id: 3, name: 'Student C', status: 'Not Started' }
-  ]);
+  const [data] = useState(STUDENTS);
 
   const handleSearchChange = (event) => {
     setSearchQuery(event.target.value);
@@ -19,7 +16,7 @@ const Student = () => {
 
   return (
     <div className="dashboard">
-      <h1>NGO University Dashboard</h1>
+      <h1>Enrolled Students</h1>
       <div class="container">
       <input
         type="text"
@@ -34,7 +31,10 @@ const Student = () => {
           <tr>
             <th>ID</th>
             <th>Name</th>
-            <th>Status</th>
+            <th>City</th>
+            <th>Contact</th>
+            <th>Email</th>
+            <th>Attandence(%)</th>
           </tr>
         </thead>
         <tbody>
@@ -42,7 +42,11 @@ const Student = () => {
             <tr key={item.id}>
               <td>{item.id}</td>
               <td>{item.name}</td>
-              <td>{item.status}</td>
+              <td>{item.city}</td>
+              <td>{item.contact}</td>
+              <td>{item.email}</td>
+              <td>{item.perc}</td>
+              
             </tr>
           ))}
         </tbody>
