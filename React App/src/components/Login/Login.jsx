@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Login.css';
 import cross_icon from '../../assets/cross_icon.png';
 
-const Login = ({ setshowLogin, switchToSignUp }) => {
+const Login = ({ setshowLogin, switchToSignUp, setUser }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
@@ -19,17 +19,16 @@ const Login = ({ setshowLogin, switchToSignUp }) => {
             <img onClick={() => setshowLogin(false)} src={cross_icon} alt="Close" />
           </div>
           <div className="login-popup-inputs">
-            <input onChange={(e) => setEmail(e.target.value)} type="text" placeholder="Email" required />
+            <input onChange={(e) => setEmail(e.target.value)} type="text" placeholder="Username" required />
             <input onChange={(e) => setPassword(e.target.value)} type="password" placeholder="Password" required />
           <a href="#" onClick={() => setShowForgotPassword(true)} className="blue-link">Forgot Password?</a>
           </div>
-          <button type="submit" disabled={loading}>{loading ? 'Logging In...' : 'Login'}</button>
+          <button onClick={() => {setUser(email.startsWith('s') ? 'student' : email.startsWith('a') ? 'admin' : ''); setshowLogin(false)}} type="submit" disabled={loading}>{loading ? 'Logging In...' : 'Login'}</button>
           {loading && <p>Logging in, please wait...</p>}
           <div className="login-popup-condition">
             <input type="checkbox" required />
             <p>By continuing I agree to the terms of <span className="blue-link">use</span> and <span className="blue-link">privacy policy</span></p>
           </div>
-          <p>Create a new account? <span onClick={switchToSignUp}>Click here</span></p>
         </form>
       )}
 
