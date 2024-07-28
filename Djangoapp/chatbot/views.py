@@ -6,7 +6,7 @@ from .response import get_response
 @api_view(['POST'])
 def chatbot(request):
     data=request.data
-    prompt=request.get(data)
+    prompt=request.get('prompt')
 
     ans=get_response(prompt)
 

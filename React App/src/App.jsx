@@ -9,6 +9,9 @@ import Dashboard from './Pages/Dashboard/Dashboard'
 import Contact from './Pages/Contact/Contact'
 import OurProgs from './Pages/OurPrograms/OurProgs'
 import DonationPage from './Pages/DonationPage/DonationPage'
+import './index.css';  // Adjust the path as necessary
+
+
 
 function App() {
   
