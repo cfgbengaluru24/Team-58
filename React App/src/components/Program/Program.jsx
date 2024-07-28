@@ -2,7 +2,7 @@ import React from 'react';
 import './program.css';
 import img1 from '../../assets/dsa.png'
 import img2 from '../../assets/front.png'
-import img3 from '../../assets/back.png'
+import img3 from '../../assets/frontend.png'
 
 const Program = () => {
   return (
