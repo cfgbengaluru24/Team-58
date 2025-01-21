@@ -13,7 +13,7 @@ const Contact = () => {
         setSuccess(false);
 
         emailjs
-        .sendForm('', '', form.current, '')
+        .sendForm('service_kxy172f', 'template_pv5dbfg', form.current, 'GS9VmbrfsxLd11Vp-')
             .then(
                 (result) => {
                     setSuccess(true);
